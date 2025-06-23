@@ -17,6 +17,7 @@ import Earth from "./components/Earth";
 import GlowingCube from "./components/GlowingCube";
 import ProjectSlider from "./components/ProjectSlider";
 
+
 const skills = [
   "Kali Linux",
   "NMap",
@@ -38,22 +39,24 @@ const projects = [
     tech: "HTML, CSS, Asp .Net, C#, MS-SQL",
     desc: "Developed a document and public relations management system specifically for the Department of Computer Science and Engineering, Amravati. The system streamlines the processing and tracking of inward and outward correspondence within the department. Built using HTML, CSS, ASP.NET, C#, and MS-SQL, this project enhanced my skills in secure data flow, role-based access, and database-driven web applications.",
     images: [
-      "/projects/oios1.jpg",
-      "/projects/oios2.jpg",
-      "/projects/oios3.jpg",
-      "/projects/oios4.jpg",
-      "/projects/oios5.jpg",
-      "/projects/oios6.jpg",
-      "/projects/oios7.jpg",
-      "/projects/oios8.jpg",
-      "/projects/oios9.jpg",
+      `${process.env.PUBLIC_URL}/projects/oios1.jpg`,
+      `${process.env.PUBLIC_URL}/projects/oios2.jpg`,
+      `${process.env.PUBLIC_URL}/projects/oios3.jpg`,
+      `${process.env.PUBLIC_URL}/projects/oios4.jpg`,
+      `${process.env.PUBLIC_URL}/projects/oios5.jpg`,
+      `${process.env.PUBLIC_URL}/projects/oios6.jpg`,
+      `${process.env.PUBLIC_URL}/projects/oios7.jpg`,
+      `${process.env.PUBLIC_URL}/projects/oios8.jpg`,
+      `${process.env.PUBLIC_URL}/projects/oios9.jpg`,
     ],
   },
   {
     name: "Student Management System (Internship Project)",
     tech: "Java, SpringBoot, Oracle, REST APIs",
     desc: "Led the end-to-end development of a comprehensive student management platform, from gathering requirements to deployment. I independently designed and developed two major modules — Login/Registration and Assignment/Result — ensuring secure user authentication and smooth data processing. Technologies used include Core Java, J2SE, Spring Boot, Oracle 10g, Apache Tomcat, and REST APIs. This project not only solidified my backend development experience but also gave me practical exposure to user data protection and access control — key concerns in cybersecurity.",
-    images: ["/projects/sms1.jpg", "/projects/sms2.jpg"],
+    images: [`${process.env.PUBLIC_URL}/projects/sms1.jpg`,
+             `${process.env.PUBLIC_URL}/projects/sms2.jpg`,
+            ],
   },
   {
     name: "Cybersecurity Labs and Practical Exercises (Ongoing)",
@@ -170,7 +173,7 @@ export default function App() {
       <section
   id="hero"
   className="relative flex flex-col items-center justify-center h-screen px-6 text-center select-none overflow-hidden bg-cover bg-center"
-  style={{ backgroundImage: "url('images/bg.jpg')" }}
+  style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/bg.jpg)` }}
 >
   {/* 3D Canvas */}
   <Canvas
@@ -192,7 +195,7 @@ export default function App() {
     <div className="relative">
       <div className="absolute -inset-3 rounded-full bg-green-400 blur-2xl opacity-40 scale-125 -z-10" />
       <img
-        src="images/portrait.jpg"
+        src={`${process.env.PUBLIC_URL}/images/portrait.jpg`}
         alt="Saurabh Mohurle"
         className="w-56 h-56 rounded-full border-4 border-green-400 shadow-xl object-cover"
       />
@@ -217,7 +220,7 @@ export default function App() {
       <TypingAnimation
         texts={[
           "Cybersecurity Enthusiast",
-          "Full Stack Java Developer",
+          "Java Backend Developer",
           "Ethical Hacker & Penetration Tester",
         ]}
         className="mt-4 text-lg md:text-xl text-gray-200 z-10 min-h-[1.5rem] bg-gradient-to-r from-red-400 via-green-300 to-green-500 bg-clip-text text-transparent"

@@ -2,30 +2,35 @@
   "name": "saurabh-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://saurabhmohurle.github.io/saurabh-portfolio-starter",
   "dependencies": {
-    "@react-three/drei": "^9.56.11",
-    "@react-three/fiber": "^8.13.1",
-    "framer-motion": "^12.16.0",
+    "@react-three/drei": "^9.57.4",
+    "@react-three/fiber": "^8.13.5",
+    "framer-motion": "^12.18.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.5.0",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.9.3",
     "react-tsparticles": "^2.12.2",
-    "three": "^0.152.2",
+    "three": "^0.159.0",
+    "three-mesh-bvh": "^0.6.0",
     "tsparticles": "^3.8.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "eslint-config-react-app": "^7.0.1",
-    "postcss": "^8.5.4",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [

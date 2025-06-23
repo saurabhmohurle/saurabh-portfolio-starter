@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.css": "/saurabh-portfolio-starter/static/css/main.491dae50.css",
+    "main.js": "/saurabh-portfolio-starter/static/js/main.45381ee2.js",
+    "index.html": "/saurabh-portfolio-starter/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.491dae50.css",
+    "static/js/main.45381ee2.js"
+  ]
+}
